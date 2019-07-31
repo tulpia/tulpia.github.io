@@ -1,5 +1,6 @@
-$body-color: blue;
-
-body {
-  color: $body-color;
-}
+@import './reset';
+@import './fonts';
+@import './variables';
+@import './general';
+@import './home';
+@import './footer';

@@ -47,6 +47,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.0",
-    "core-js": "^3.0.1"
+    "core-js": "^3.0.1",
+    "imagesloaded": "^4.1.4"
   }
 }
