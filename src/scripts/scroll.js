@@ -1,13 +1,9 @@
-import imagesLoaded from 'imagesloaded';
+/* TODO */
+// 1/ Ajouter effet sur les images (parallax)
+// 2/ Ajouter menu avec anim
 
-const math = {
-	lerp: (a, b, n) => {
-		return (1 - n) * a + n * b;
-	},
-	norm: (value, min, max) => {
-	  	return (value - min) / (max - min);
-	}
-};
+import imagesLoaded from 'imagesloaded';
+import math from './math';
 
 const config = {
   height: window.innerHeight,
@@ -78,7 +74,7 @@ class Smooth {
     const diff = this.data.current - this.data.last;
     const acc = diff / config.width;
     const velo =+ acc;
-    const skew = velo * 9;
+    const skew = velo * 10;
     
     this.dom.content.style.transform = `translate3d(0, -${this.data.last}px, 0) skewY(${skew}deg)`;
 
@@ -136,4 +132,4 @@ class Smooth {
   }
 }
 
-new Smooth();
+const smooth = new Smooth();
