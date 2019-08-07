@@ -1,0 +1,39 @@
+.loader {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $mobile) {
+        align-items: flex-end;
+    }
+
+    .text-container {
+        overflow: hidden;
+        margin-left: 15%;
+
+        @media (max-width: $mobile) {
+            margin-left: 10vw;
+            margin-bottom: 40px;
+        }
+        
+        p {
+            color: white;
+            font-family: $font;
+            font-size: 48px;
+
+            @media (max-width: $tablet) {
+                font-size: 36px;
+            }
+
+            @media (max-width: $tablet) {
+                font-size: 24px;
+            }
+        }
+    }
+}
